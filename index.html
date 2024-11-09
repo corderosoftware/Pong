@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong - Juego de 2 jugadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Pong - Juego de 2 Jugadores</h1>
+        <div id="instructions">
+            <p>Jugador 1: Mueve con las teclas de flecha arriba y abajo.</p>
+            <p>Jugador 2: Mueve con las teclas 'A' (arriba) y 'Z' (abajo).</p>
+            <p>¡Que empiece el juego!</p>
+        </div>
+        <canvas id="pongCanvas" width="600" height="400"></canvas>
+        <div id="score">
+            <p id="player1-score">Jugador 1: 0</p>
+            <p id="player2-score">Jugador 2: 0</p>
+        </div>
+        <button id="restartBtn" onclick="restartGame()">Reiniciar Juego</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
